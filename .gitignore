@@ -1,4 +1,7 @@
 .eggs/
+venv
+!venv/lib/python3.7/site-packages/causalml/inference/tree/models.py
+!venv/lib/python3.7/site-packages/causalml/inference/meta/tlearner.py
 *.egg-info/
 env_docs/
 .idea

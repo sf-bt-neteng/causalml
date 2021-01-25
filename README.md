@@ -3,6 +3,44 @@
 </div>
 
 ------------------------------------------------------
+# omer's annoying addition:
+
+making this run in your local venv ...
+### setting up and running jupyter notebooks in a virtual environment
+
+```
+python3.7 -m venv venv
+. venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+setting up dark theme
+```
+jt -t onedork -fs 95 -altp -tfs 11 -nfs 115 -cellw 88% -T
+```
+
+fire up the notebook:
+```jupyter notebook```
+
+using the ^B liberally for sandbox testing in jupyter, my favorite!
+
+for more details, searching for turbo charge or turbo boosting notebooks for a medium.com article
+
+
+### issues uncovered during isntal
+
+
+A bunch of install issues happened, but I was finally able to make the library work by following the fixes I documented in the issue here:
+https://github.com/uber/causalml/issues/288
+
+I’ve forked the code and kept it here
+https://github.com/sf-bt-neteng/causalml
+
+Important thing to note. I’ve hacked two files (per the github issues I raised) in the venv which is _not_ uploaded to github, so that venv is here on my computer. 
+i'm forcing them to be checked in
+
+
 
 [![PyPI Version](https://badge.fury.io/py/causalml.svg)](https://pypi.org/project/causalml/)
 [![Build Status](https://travis-ci.com/uber/causalml.svg?token=t7jFKh1sKGtbqHWp2sGn&branch=master)](https://travis-ci.com/uber/causalml)
